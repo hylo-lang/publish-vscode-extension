@@ -87,6 +87,7 @@ dist/*
 !dist/index.js
 !dist/\[Content_Types*
 !dist/*.vsixmanifest
+!dist/*.node
 
 # Gatsby files
 .cache/
