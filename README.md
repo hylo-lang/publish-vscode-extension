@@ -29,11 +29,11 @@ jobs:
           node-version: 22
       - run: npm ci
       - name: Publish to Open VSX Registry
-        uses: hylo-lang/publish-vscode-extension@v1.0.0
+        uses: hylo-lang/publish-vscode-extension@v1.0.6
         with:
           pat: ${{ secrets.OPEN_VSX_TOKEN }}
       - name: Publish to Visual Studio Marketplace
-        uses: hylo-lang/publish-vscode-extension@v1.0.0
+        uses: hylo-lang/publish-vscode-extension@v1.0.6
         with:
           pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
           registryUrl: https://marketplace.visualstudio.com
@@ -43,12 +43,12 @@ To package the extension only once and publish the **identical** `.vsix` file to
 
 ```yaml
 - name: Publish to Open VSX Registry
-  uses: hylo-lang/publish-vscode-extension@v1.0.0
+  uses: hylo-lang/publish-vscode-extension@v1.0.6
   id: publishToOpenVSX
   with:
     pat: ${{ secrets.OPEN_VSX_TOKEN }}
 - name: Publish to Visual Studio Marketplace
-  uses: hylo-lang/publish-vscode-extension@v1.0.0
+  uses: hylo-lang/publish-vscode-extension@v1.0.6
   with:
     pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
     registryUrl: https://marketplace.visualstudio.com
