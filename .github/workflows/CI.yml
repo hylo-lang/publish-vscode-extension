@@ -24,7 +24,7 @@ jobs:
           - macos-latest
           - windows-latest
         node:
-          - 20
+          - 22
     steps:
       - name: Checkout Source
         uses: actions/checkout@v4
